@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'BRRR';
+  src: url('BRRR_Trial-Medium.ttf');
+
+
+}
+h1{
+  font-family:'BRRR'
+}
+
+@font-face{
+  font-family:'UniversL' ;
+  src: url('UniversLTStd-BoldEx.ttf')
+}
+h2{
+  font-family:'Universl'
+}
+
+.outer
+{
+  height: 600px;
+  width: 600px;
+  border: 1px solid #000;
+  font-family:'UniversL'
+}
+.inner {
+    height: 200px;
+    width: 200px;
+    margin: 200px;
+    background: rgb(12, 90, 43);
+  }
+img {
+    height: auto;
+    width: 600px;
+    display: none
+  }
+ .inner:hover img {
+    display: block;
+  }
+
+  .outer0
+  {
+    height: 600px;
+    width: 600px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 9px;
+    left: 608px;
+
+    overflow: scroll;
+  }
+
+  .outer1
+{
+  height: 600px;
+  width: 600px;
+  border: 1px solid #000;
+  position: relative;
+  left: 600px;
+  font-family:'UniversL'
+}
+.inner1 {
+    height: 200px;
+    width: 200px;
+    margin: 200px;
+    background: rgb(250, 212, 0);
+  }
+img {
+    height: auto;
+    width: 600px;
+    display: none
+  }
+ .inner1:hover img {
+    display: block;
+  }
+
+  .outer2
+  {
+    height: 600px;
+    width: 600px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 10px;
+    left: 1209px;
+    font-family:'UniversL'
+}
+.inner2 {
+    height: 200px;
+    width: 200px;
+    margin: 200px;
+    background: rgb(20, 129, 175);
+  }
+img {
+    height: auto;
+    width: 600px;
+    display: none
+  }
+.inner2:hover img {
+    display: block;
+  }
+
+  .outer3
+  {
+    height: 600px;
+    width: 600px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 1210px;
+    left: 7px;
+    font-family:'UniversL'
+}
+.inner3 {
+    height: 200px;
+    width: 200px;
+    margin: 200px;
+    background: rgb(165, 58, 61);
+    
+  }
+
+  .outer4
+  {
+    height: 600px;
+    width: 600px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 1210px;
+    left: 1210px;
+    font-family:'UniversL'
+  }
+  a{
+    text-decoration-line: none;
+}
+<div>
+a:link{color:black;}
+a:hover{color:black;}
+a:visited{color:black;}
+a:active{color:black;}
+</div>
+
+
