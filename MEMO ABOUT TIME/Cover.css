@@ -1,0 +1,153 @@
+@charset "UTF-8";
+:root {
+  --bg-color: #010;
+  --bg-color-faded: rgba(50, 70, 50, 0.5);
+  --text-color: rgba(125, 213, 130, 0.5);
+  --text-shadow-color: rgba(125, 213, 130, 1);
+}
+
+body {
+  background: var(--bg-color);
+}
+
+body,
+h1,
+p,
+a,
+summary {
+  font-size: 5vw;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  font-family: "VT323", monospace;
+  transform: skewx(0.1deg);
+  color: var(--text-color);
+  text-shadow: 0 0 2px var(--text-shadow-color), 0 0 12px var(--text-shadow-color);
+}
+
+summary,
+a {
+  list-style: none;
+  cursor: pointer;
+  padding: 0 1ch;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+ul {
+  margin: 0 0 1em;
+  list-style: none;
+}
+
+ul li::before {
+  content: "¤ ";
+}
+
+summary:before {
+  content: "> ";
+}
+
+a:before {
+  content: "«";
+}
+
+a:after {
+  content: "»";
+}
+
+summary:hover,
+a:hover {
+  color: var(--bg-color);
+  background: var(--text-shadow-color);
+  color: var(--bg-color-faded);
+  box-shadow: 0 0 2px var(--text-shadow-color), 0 0 12px var(--text-shadow-color);
+  text-shadow: 0 0 2px var(--bg-color), 0 0 12px var(--bg-color);
+}
+
+section {
+  padding-bottom: 1em;
+}
+
+.screen {
+  margin: auto;
+  width: 40ch;
+  -webkit-animation: glow 7s infinite alternate ease-in;
+          animation: glow 7s infinite alternate ease-in;
+}
+
+.screen > p {
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+p.no-break {
+  padding: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.border:before {
+  content: "** ";
+  float: left;
+}
+
+.border:after {
+  content: " **";
+  float: right;
+}
+
+.pulse {
+  -webkit-animation: pulse 1.5s ease-in;
+          animation: pulse 1.5s ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes pulse {
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.1;
+  }
+  85% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.1;
+  }
+  85% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px var(--text-shadow-color), 0 0 12px var(--text-shadow-color);
+  }
+  to {
+    text-shadow: 0 0 1px var(--text-shadow-color), 0 0 6px var(--text-shadow-color);
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px var(--text-shadow-color), 0 0 12px var(--text-shadow-color);
+  }
+  to {
+    text-shadow: 0 0 1px var(--text-shadow-color), 0 0 6px var(--text-shadow-color);
+  }
+}
