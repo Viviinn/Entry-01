@@ -51,14 +51,7 @@ h2{
     padding: 20px;
     background: rgb(12, 90, 43);
   }
-img {
-    height: auto;
-    width: 600px;
-    display: none
-  }
- .inner:hover img {
-    display: block;
-  }
+
 
   .outer0
   {

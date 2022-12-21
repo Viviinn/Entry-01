@@ -15,6 +15,10 @@
 	--color: hsl(210 80% 50%);
 	--segments-per-second: calc(var(--loading-speed) / var(--total-length));
 }
+@font-face{
+  font-family:'UniversL' ;
+  src: url('UniversLTStd-BoldEx.ttf')
+}
 
 body {
   display: grid;
@@ -23,7 +27,7 @@ body {
   grid-gap:20vmin;
   min-height: 100vh;
   background: hsl(0 0% 90%);
-  font-family:  'Google Sans', sans-serif, system-ui;
+  font-family: UniversL;
 }
 
 .container:last-of-type {

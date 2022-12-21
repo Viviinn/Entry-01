@@ -1,0 +1,29 @@
+.paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  @font-face{
+    font-family:'UniversL' ;
+    src: url('UniversLTStd-BoldEx.ttf')
+  }
+ 
+  .words {
+    border-radius: 1px;
+    background-color: rgb(35, 162, 99);
+    line-height: 1.5;
+    padding: 90px;
+    width: 500px;
+    color: black;
+    user-select: none;
+    font-family:'Universl'
+  }
+  h2 {
+    text-align: center;
+  }
+  .hide {
+    transition: 0.75s linear color;
+    color: transparent;
+  }
+  
